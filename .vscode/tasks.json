@@ -1,0 +1,13 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+            "label": "cargo build",
+            "type": "shell",
+            "command": "cargo build --manifest-path D:/Rust/Projects/project_1/project_1/Cargo.toml",
+            "problemMatcher": [
+                "$rustc"
+            ]
+        }
+	]
+}
