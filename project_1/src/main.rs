@@ -41,9 +41,8 @@ struct Opt {
     files: Vec<PathBuf>,
 }
 
-use ferris_says::say; // from the previous step
-use std::io::{stdout, BufWriter};
+
 fn main() {
-    let opt = Opt::from_args();
-    
+    //let opt = Opt::from_args();
+    helpers::generate_file("D:\\Rust\\Projects\\project_1".to_string(), 20, 0, 20).expect("failed");
 }

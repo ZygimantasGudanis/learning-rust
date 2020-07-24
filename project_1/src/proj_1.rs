@@ -1,4 +1,5 @@
 pub mod triangle {
+    #![allow(dead_code)]
     use crate::helpers::cli_reader::*;
 
     enum MathError {
