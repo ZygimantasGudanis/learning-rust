@@ -6,9 +6,8 @@ use io::BufRead;
 
 pub mod QuickSort;
 
-fn sort(vector: Vec<i32>) -> Vec<i32> {
-
-    QuickSort::quick_sort(vector.to_vec(), 0, vector.len() - 1)
+fn sort(vector: &mut [i32]) -> &mut [i32] {
+    QuickSort::quick_sort(vector, 0, vector.len() - 1)
 }
 
 pub fn sort_file(input_path: String, output_path: String) -> Result<(), Error> {
@@ -25,7 +24,7 @@ pub fn sort_file(input_path: String, output_path: String) -> Result<(), Error> {
         }
     }
     println!("{:?}", vector);
-    let sorted_vector = sort(vector);
+    let sorted_vector = sort(vector.as_mut());
     println!("{:?}", sorted_vector);
     let mut file = File::create(output_path)?;
     for i in sorted_vector.iter(){
