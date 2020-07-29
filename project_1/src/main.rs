@@ -45,7 +45,7 @@ struct Opt {
 
 fn main() {
     //let opt = Opt::from_args();
-    helpers::generate_file("D:\\Rust\\Projects\\project_1\\foo.txt".to_string(), 20, 0, 20).expect("failed");
-    sorting::sort_file("D:\\Rust\\Projects\\project_1\\foo.txt".to_string(), "D:\\Rust\\Projects\\project_1\\foo-sorted.txt".to_string()).expect("msg");
-    //sorting::sort();
+    // helpers::generate_file("D:\\Rust\\Projects\\project_1\\foo.txt".to_string(), 20, 0, 20).expect("failed");
+    // sorting::sort_file("D:\\Rust\\Projects\\project_1\\foo.txt".to_string(), "D:\\Rust\\Projects\\project_1\\foo-sorted.txt".to_string()).expect("msg");
+    // sorting::sort();
 }

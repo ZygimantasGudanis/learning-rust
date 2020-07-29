@@ -10,7 +10,7 @@ pub fn quick_sort(vector: &mut [i32], low: usize, high: usize) -> &mut [i32]{
 }
 
 fn partition(vector: &mut [i32], low: usize, high: usize) -> (usize, &mut [i32]) {
-    let mut vector_copy = vector;
+    let vector_copy = vector;
     let pivot = vector_copy[high];
     let mut i: usize = low;
     for n in low..=high {

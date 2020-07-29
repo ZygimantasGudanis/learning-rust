@@ -4,10 +4,10 @@ use std::io::{self, Write};
 use io::BufRead;
 
 
-pub mod QuickSort;
+pub mod quick_sort;
 
 fn sort(vector: &mut [i32]) -> &mut [i32] {
-    QuickSort::quick_sort(vector, 0, vector.len() - 1)
+    quick_sort::quick_sort(vector, 0, vector.len() - 1)
 }
 
 pub fn sort_file(input_path: String, output_path: String) -> Result<(), Error> {
